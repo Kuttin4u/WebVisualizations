@@ -13,8 +13,16 @@
             h1 {
                 color: blue;
                 font-style: oblique;
-                text-align: center;
+                text-align: left;
                 font-weight: bold;
+                font-size: 22;
+            }
+
+            h2 {
+                color: blue;
+                font-style: oblique;
+                text-align: center;
+                font-size: 18;
             }
 
             img {
@@ -22,76 +30,91 @@
                 margin-right: auto;
             }
         </style>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Dashboard Menu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Visualizations.html">Visualizations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparisons.html">Comparisons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="analysis-data.html">Analysis</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-        <div class="container-fluid full"></div>
-        <span class="border border-primary"></span>
-        <p class="py-5 text-center">
-            <img class="fas fa-hourglass-full" src="Resources/assets/images/beach_image.jpg">
-            </div>
-            <div class="container">
-                <nav class="navbar">
-                    <span class="border border-primary"></span>
-                    <select id="nav-select">
-                        <option value="">Weather Data</option>
-                        <a href="index.html" target="_blank">
-                            <option value="about">Visualizations</option>
-                            <a href="Visualizations.html" target="_blank">
-                                <option value="portfolio">Comparisons</option>
-                                <a href="comparisons.html" target="_blank">
-                                    <option value="contact">Analysis Data</option>
-                                    <a href="analysis-data.html" target="_blank">
-                    </select>
-                </nav>
-            </div>
+        <nav class="navbar navbar-primary bg-primary">
+            <a class="navbar-brand" href="index.html">
+                <img src="Resources/assets/images/beach_image.jpg" width="30" height="30" alt="">
+            </a>
+            <span class="border border-primary"></span>
+        </nav>
+        <div class="container-fluid full">
+            <img class="img-thumbnail" src="Resources/assets/images/beach_image.jpg">
+        </div>
+
     </head>
 
-    <div class="container">
-        <div>
-            <h1 class="display-3">Comparisons</h1>
-            <p class="lead">For a pro vs am coding visual, follow the links to see comparisons of image renderings
-                and the long short story of how I
-                inserted a csv dataframe to show the data...no 'analysis' has officially been done by me.</p>
-            <hr class="my-4">
+    <body>
+
+        <div class="container">
+            <div>
+                <h1 class="display-3">Comparisons</h1>
+                <p class="lead">For a pro vs am coding visual, follow the links to see comparisons of image renderings
+                    and the long short story of how I
+                    inserted a csv dataframe to show the data...no 'analysis' has officially been done by me.</p>
+                <hr class="my-4">
+            </div>
         </div>
-    </div>
 
-    <div class="container">
-        <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Thumbnail Gallery</h1>
-        <hr class="mt-2 mb-5">
+        <div class="container">
+            <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Thumbnail Gallery</h1>
+            <hr class="mt-2 mb-5">
 
-        <div class="row text-center text-lg-left">
+            <div class="row text-center text-lg-left">
 
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
-                    <img class="img-fluid img-thumbnail" src="Resources/assets/images/fig1.png" alt="MaxTemp">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
-                    <img class="img-fluid img-thumbnail" src="Resources/assets/images/fig2.png" alt="Humidity">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
-                    <img class="img-fluid img-thumbnail" src="Resources/assets/images/fig3.png" alt="Cloudiness">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
-                    <img class="img-fluid img-thumbnail" src="Resources/assets/images/fig4.png" alt="Wind Speed">
-                </a>
-            </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="Resources/assets/images/fig1.png" alt="MaxTemp">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="Resources/assets/images/fig2.png" alt="Humidity">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="Resources/assets/images/fig3.png" alt="Cloudiness">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="Resources/assets/images/fig4.png" alt="Wind Speed">
+                    </a>
+                </div>
 
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-                crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-                crossorigin="anonymous"></script>
-            </body>
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                    crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                    crossorigin="anonymous"></script>
+    </body>
 
 </html>
 

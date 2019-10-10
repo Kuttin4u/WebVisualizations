@@ -1,2 +1,0 @@
-# WebVisualizations
-Web Homework

@@ -9,63 +9,102 @@
         <title>Weather Dashboard</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
         <style>
             h1 {
                 color: blue;
                 font-style: oblique;
-                text-align: center;
+                text-align: left;
                 font-weight: bold;
+                font-size: 34px;
+            }
+
+            h2 {
+                color: blue;
+                font-style: oblique;
+                text-align: center;
+                font-size: 30px;
+            }
+
+            p {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: left;
+                font-size: 32px;
             }
 
             img {
                 margin-left: auto;
                 margin-right: auto;
             }
-        </style>
 
-        <div class="container-fluid lg">
+            ul {
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 30px;
+            }
+        </style>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Dashboard Menu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Visualizations.html">Visualizations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparisons.html">Comparisons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="analysis-data.html">Analysis</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-primary bg-primary">
+            <a class="navbar-brand" href="index.html">
+                <img src="Resources/assets/images/beach_image.jpg" width="30" height="30" alt="">
+            </a>
             <span class="border border-primary"></span>
-            <p class="py-5 text-left">
-                <img class="fas fa-hourglass-full" src="Resources/assets/images/beach_image.jpg">
+        </nav>
+        <div class="container-fluid full">
+            <img class="img-thumbnail" src="Resources/assets/images/beach_image.jpg">
         </div>
-        <div class="container">
-            <nav class="navbar">
-                <span class="border border-primary"></span>
-                <select id="nav-select">
-                    <option value="">Weather Dashboard</option>
-                    <a href="index.html" target="_blank">
-                        <option value="#">Visualizations</option>
-                        <a href="Visualizations.html" target="_blank">
-                            <option value="#">Comparisons</option>
-                            <a href="comparisons.html" target="_blank">
-                                <option value="#">Analysis Data</option>
-                                <a href="analysis-data.html" target="_blank">
-                </select>
-            </nav>
-        </div>
+
     </head>
+
 
     <body>
         <div class="container">
             <h1 class="display-3">Weather Data Dashboard</h1>
             <hr class="my-4">
-            <p class="lead">The Weather Data dashboard includes four (4) scatter plots illustrating the
+            <p>The Weather Data dashboard includes four (4) scatter plots illustrating the
                 concentration of weather data over the globe scaled versus latitude: </p>
             <ul>
-                <li><a href="Resources/assets/images/fig1.png">Max Temperature</a></li>
-                <li><a href="Resources/assets/images/fig2.png">Humidity</a></li>
-                <li><a href="Resources/assets/images/fig3.png">Cloudines</a></li>
-                <li><a href="Resources/assets/images/fig4.png">Wind Speed</a></li>
+                <li><a href="Resources/assets/images/fig1.png" target="_blank">Max Temperature</a></li>
+                <li><a href="Resources/assets/images/fig2.png" target="_blank">Humidity</a></li>
+                <li><a href="Resources/assets/images/fig3.png" target="_blank">Cloudines</a></li>
+                <li><a href="Resources/assets/images/fig4.png" target="_blank">Wind Speed</a></li>
             </ul>
 
 
-            <p class="lead">Additional information available includes links to Comparison image renderings:</p>
+            <p>Additional information available includes links to Comparison image renderings:</p>
 
-            <a class="btn btn-primary btn-lg" href="#" role="button">Pro vs. Am</a>
+            <a class="btn btn-primary btn-lg" href="pro-vs-am.html" role="button" target="_blank">Pro vs.
+                Am</a>
             <p>and </p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">The Long Short Story</a>
+            <a class="btn btn-primary btn-lg" href="analysis-data.html" role="button" target="_blank">The Long Short
+                Story</a>
 
-            <p class="lead"> It's bout how I inserted the csv dataframe to show the data...no 'analysis' has officially
+            <p> It's bout how I inserted the csv dataframe to show the data...no 'analysis' has officially
                 been done by me.</p>
 
         </div>
